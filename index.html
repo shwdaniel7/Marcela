@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>aniversário</h1>
+    <p>a</p>
+
+    <!-- Imagens do Snoopy e Pochacco -->
+    <div>
+        <img src="snoopy.png" alt="Snoopy" class="character">
+        <img src="pocchaco.png" alt="Pochacco" class="character">
+    </div>
+
+    <!-- Botão para mostrar a mensagem -->
+    <button id="show-message">mensagem</button>
+    <div id="hidden-message" class="hidden-content">
+        <p>a</p>
+    </div>
+
+    <!-- Botão para mostrar a citação e a nova imagem -->
+    <button id="show-quote">e nunca se esqueça</button>
+    <div id="hidden-quote" class="hidden-content">
+        <p class="quote">“I’ll be by your side, when you need me.” — Sade</p>
+        <img src="snoopy2.png" alt="snoopy2" class="character">
+    </div>
+
+    <footer>feito com carinho ❤️</footer>
+
+    <script>
+        // Seleciona os elementos do DOM
+        const messageButton = document.getElementById('show-message');
+        const quoteButton = document.getElementById('show-quote');
+        const hiddenMessage = document.getElementById('hidden-message');
+        const hiddenQuote = document.getElementById('hidden-quote');
+
+        // Exibe a mensagem ao clicar no botão
+        messageButton.addEventListener('click', () => {
+            hiddenMessage.style.display = 'block';
+            messageButton.style.display = 'none';
+        });
+
+        // Exibe a citação e a nova imagem ao clicar no botão
+        quoteButton.addEventListener('click', () => {
+            hiddenQuote.style.display = 'block';
+            quoteButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
