@@ -1,0 +1,99 @@
+body {
+    background-color: #FFD1DC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.tela {
+    display: none;
+}
+.tela.ativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#balao-fala {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.oculto {
+    display: none;
+}
+#jogo img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.carta {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+.brilho {
+    animation: brilho 0.5s ease-in-out;
+}
+@keyframes brilho {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.5); }
+    100% { filter: brightness(1); }
+}
+
+#keroppi {
+    width: 60%;
+}
+
+#presente {
+    width: 80%;
+}
+
+#mostrar-presente {
+    background: linear-gradient(145deg, #800020, #a8324a);
+    color: white;
+    border: 2px solid #5c0014;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#continuar-1 {
+    background: linear-gradient(145deg, #800020, #a8324a);
+    color: white;
+    border: 2px solid #5c0014;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#iniciar {
+    background: linear-gradient(145deg, #800020, #a8324a);
+    color: white;
+    border: 2px solid #5c0014;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}

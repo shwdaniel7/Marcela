@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for you</title>
+    <link rel="stylesheet" href="fy.css">
+</head>
+<body>
+    <div id="tela-inicial" class="tela ativo">
+        <img src="media/keroppi.png" alt="Keroppi" id="keroppi">
+        <div id="balao-fala">ooooi cela! tava com um tempinho, entao decidi fzr alguma coisa pra tentar te animar um pouco, espero q goste!</div>
+        <button id="iniciar">Avançar</button>
+    </div>
+    
+    <div id="minigame-1" class="tela">
+        <div id="temporizador">10</div>
+        <div id="jogo"></div>
+        <div id="resultado" class="oculto">
+            <p>você conseguiu!!! (pegue os corações q sobraram antes de ver o presente)</p>
+            <button id="mostrar-presente">Mostrar Presente</button>
+        </div>
+        <img id="presente" class="oculto" src="media/presente.png" alt="Presente">
+        <button id="continuar-1" class="oculto">Continuar</button>
+    </div>
+    
+    <div id="minigame-2" class="tela">
+        <div id="cartas">
+            <img class="carta" src="media/imperatriz.png" alt="A Imperatriz">
+            <img class="carta" src="media/lua.png" alt="A Lua">
+            <img class="carta" src="media/sol.png" alt="O Sol">
+            <img class="carta" src="media/estrela.png" alt="A Estrela">
+            <img class="carta" src="media/enamorados.png" alt="Enamorados">
+        </div>
+        <div id="mensagem-musical"></div>
+        <button id="finalizar" class="oculto">Finalizar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
