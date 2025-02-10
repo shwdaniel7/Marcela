@@ -60,4 +60,13 @@ document.querySelectorAll('.carta').forEach(carta => {
         this.classList.add('brilho');
         setTimeout(() => this.classList.remove('brilho'), 500);
     });
+
+    const revelarSurpresaBtn = document.getElementById("revelar-surpresa");
+    const mensagemFinal = document.getElementById("mensagem-final");
+    
+    revelarSurpresaBtn.addEventListener("click", () => {
+        mensagemFinal.style.display = "block";
+        revelarSurpresaBtn.style.display = "none";
+    });
+
 });
